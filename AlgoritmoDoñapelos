@@ -1,0 +1,46 @@
+Algoritmo Donapelos
+	Definir A,B,C,D,E como texto;
+	Definir OPC como texto;
+	Definir opc_mientras como texto;
+	opc_mientras ="SI";
+	
+	
+	Mientras (opc_mientras ="SI")
+		Escribir "Menu del dia: Selecciona la letrade tu orden";
+		Escribir "A Gordita de Rojo";
+		Escribir "B Gordita de Discada";
+		Escribir "C Gordita de Frijoles";
+		Escribir "D Gordita de Prensado";
+		Escribir "E Gordita de Picadillo";
+		
+		
+		Escribir "Ingresa la letra de la gordita que corresponda:"
+		Leer OPC;
+		
+		Segun OPC hacer
+			Caso "A":
+				A = B;
+				Escribir "Has seleccionado Gordita de Rojo",A;
+			Caso "B":
+				A = C;
+				Escribir "Has seleccionado Gordita de Discada",A;
+			Caso "C":
+				A = D;
+				Escribir "Has seleccionado Gordita de Frijoles",A;
+			Caso "D":
+				A = E;
+				Escribir "Has seleccionado Gordita de Prensado",A;
+			Caso "E":
+				A = F;
+				Escribir "Has seleccionado Gordita de Picadillo",A;
+				
+			De Otro Modo:
+				Escribir "No se ha completado tu compra joven,ya no tenemos guisos.";
+		FinSegun
+		
+				Escribir "¿Quieres comprar mas Gordas? Escribe( SI )";
+				Leer opc_mientras;
+				
+				
+			FinMientras
+FinAlgoritmo
